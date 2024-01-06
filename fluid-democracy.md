@@ -1,10 +1,10 @@
 # What is this page about?
-This page describes an idea for collective decision-making mechanism.
+This page describes an idea for a collective decision-making mechanism.
 
 We already have different mechansims:
 - **Direct democracy** - when everyone votes on issues directly
 - **Representative democracy** - when voters elect representatives, and the representatives then vote on issues
-- **Liquid democracy* - when voters can either vote on an issue directly or delegate their vote to someone else (presumably better equipped to make the right choice in your best interest)
+- **Liquid democracy** - when voters can either vote on an issue directly or delegate their vote to someone else (presumably better equipped to make the right choice in your best interest)
 
 # Do we need yet another one?
 
@@ -25,9 +25,9 @@ You tell the system which of the past decisions you liked and didn't like. For e
 
 There could be hundreds or thousands of people your vote is delegated to (unlike liquid democracy, where you delegate your vote to a single person). Your delegated vote is calculated to be the consensus of people your vote got delegated to. The consensus process is impacted by how big of a share of your vote every person has.
 
-For example, consider that your vote is delegated to Alice, Bob and Carol in fractions of 0.6, 0.3 and 0.1, respectively. If Alice votes in favor of proposal P and Bob and Carol vote against it, then your vote will be: 0.6 "for" vs 0.4 "against", so your vote will be counted as "for".
+For example, consider that your vote is delegated to Alice, Bob and Carol in fractions of 0.6, 0.3 and 0.1, respectively. If Alice votes in favor of proposal P and Bob and Carol vote against it, then your vote will counted as "for" because 0.6 > 0.3 + 0.1.
 
-You can change your ratings of past decisions at any time as you learn more about the past decisions and how well they panned out. This process of rating past decisions is much easier than voting on those past decisions because you have the benefit of the hindsight.
+You can change your ratings of past decisions at any time as you learn more about the past decisions and how well they panned out. This process of rating past decisions is much easier than voting on those past decisions at the time because you have the benefit of the hindsight.
 
 The benefit of this system is that it solves the problem of discovering trustworthy people to delegate your vote to. Those people don't need to advertise or publicly promote themselves. Let their past actions speak for them.
 
