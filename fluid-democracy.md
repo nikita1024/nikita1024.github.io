@@ -16,13 +16,15 @@ Each of the existing mechanisms has significant drawbacks:
 # How does Fluid Democracy work?
 
 - Like in direct democracy, you can vote on any issue directly.
-- Unlike direct democracy, if you don't vote directly, your vote is not wasted. Instead, it is delegated to other voter**s** who have voted in your best interest in the past.
+- Unlike direct democracy, if you don't vote directly, your vote is not wasted. Instead, it is delegated to other voters who have voted in your best interest in the past.
 
 You tell the system which of the past decisions you liked and didn't like.
 
 A voting issue has two or more options. You can 'like' or 'dislike' any option of past votes. When you like an option, everyone who voted for it gets one share of your vote. When you dislike an option, those who voted for it lose a share of your vote. As a result, the balance of your vote shares that everyone holds reflects how well their past votes aligned with your preferences.
 
-Here is what happens the next time there is a vote where you delegate your vote. The system sums up the balances of people who voted for each option, and the option with the most shares is declared as your vote. Note: people with a negative balance are counted as 0.
+The next time there is a vote where you delegate your vote, here is what happens:
+- The system sums up the balances of people who voted for each option. People with a negative balance are counted as 0 balance.
+- The option with the most shares is declared as your vote. 
 
 For example, consider that your vote is delegated to Alice, Bob, and Carol who hold 6, 3, and 2 shares of your vote, respectively. If Alice votes in favor of proposal *P* and Bob and Carol vote against it, then your vote will be counted as "for" because 6 > 3 + 2.
 
@@ -51,6 +53,8 @@ To solve this issue FD allows you to assign your votes into groups. For example,
 When you vote on an issue, you choose which group this vote will be part of. For example, when you vote on a public transportation-related issue, you would assign that vote to the "transport" group. Then this vote will carry the delegation influence you earned by your other votes in the "transport" group.
 
 Then you don't have to worry about voting on any other issue. You just assign those votes to the "everything else" group. If anyone dislikes your votes that you put into the "everything else" group, the influence of your "transport" group won't be affected.
+
+Note: the groupings of votes is something you decide for yourself. How you call the groups is only visible to you. There is no need in a global issue classification system.
 
 # Why is it called "Fluid Democracy"?
 I think of FD as an improvement over liquid democracy. The way FD distributes the delegation power is more liquid than liquid democracy itself. In liquid democracy, you have to delegate your vote to a single person which feels very discrete. While in FD your vote is delegated much more broadly.
